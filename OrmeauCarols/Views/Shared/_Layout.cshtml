@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Cardo&v2' rel='stylesheet' type='text/css'>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>@ViewBag.Title</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+  <script src="@Url.Content("~/Scripts/modernizr-2.0.6-development-only.js")"></script>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+      <img src="/Content/images/header.png" alt="the little DRUMMER boy - ORMEAU CAROLS 2011" />
+    </header>
+    <div id="main" role="main">
+      <div id="content">
+        <div id="left-col">
+          <div id="feature">
+            <img src="@Url.Content("~/Content/images/feature/Image" + new Random().Next(1,9) +".jpg")" alt="" />
+          </div>
+          <img id="main-details" src="/Content/images/maindetails.png" alt="Sunday Dec 11/Brien Harris Oval/Free Rides/Food/Santa/Fireworks/4:30pm festivities/7:30pm show"/>
+          <h1>ABOUT ORMEAU CAROLS</h1>
+          <p>The Ormeau Carols has been bringing Christmas to the Community for over 15years.</p>
+          <p>Driven and performed by the amazing people from Highway Christian Church, the show is full of life and fun.</p>
+          <p>You’ll sing a long to your favourite Christmas carols, be entertained by the larger than life characters, and most importantly celebrate Christmas as a community.</p>
+          <p>Our local businesses make it all possible by supporting the event through financial sponsorships and product or service donations. We sincerely thank those that have come and are yet to come on board in this way.</p>
+          <p>Whether you are 5 years old and are there to see Santa, 35 years old and can’t wait for the fireworks, or 85 years old and are desperately hoping to be chosen for Carolokee, this show is for you!</p>
+          <p>We have already begun preparing a cracker show, based on the timeless story ‘The Little Drummer Boy’. Why not come early and entertain your family with free rides and attractions and a wide selection of food and drink.</p>
+          <p>Come and bring your family and friends, it won’t be Christmas without you!</p>
+          <p class="byline">KA Smith - Event Coordinator</p>
+        </div>
+        <div id="right-col">
+@*          <div class="panel">
+            <h1>Follow us on</h1>
+            <div class="panel-content">
+              <img src="/Content/images/facebook.png" alt="facebook"/>
+              <img src="/Content/images/twitter.png" alt="twitter"/>
+              <img src="/Content/images/youtube.png" alt="youtube"/>
+              <img src="/Content/images/google.png" alt="google"/>
+              <img src="/Content/images/email.png" alt="email"/>
+              <img src="/Content/images/map.png" alt="map"/>
+            </div>
+          </div>
+*@          <div class="panel">
+            <h1><a href="http://www.facebook.com/pages/Ormeau-Carols/246744065349913" target="_blank"><img src="/Content/images/facebook.png" alt="facebook"/></a>acebook</h1>
+            <div class="panel-content">
+              <p>Can't wait for Carols 2011!<a href="#">Michael Noonan</a></p>
+              <p>How good was Caroloke? I'm glad nobody picked me!<a href="#">Anne Graham</a></p>
+              <a href="http://www.facebook.com/pages/Ormeau-Carols/246744065349913" target="_blank" class="external-link">Follow us on Facebook</a>
+            </div>
+          </div>
+          <div class="panel">
+            <h1><a href="http://twitter.com/?q=ormeau+carols#!/OrmeauCarols" target="_blank"><img src="/Content/images/twitter.png" alt="twitter"/></a>witter</h1>
+            <div class="panel-content">
+              <p>I loved Ormeau Carols 2010 - best ever! Can't wait for this year! <a href="#">Nathan Azzopardi</a></p>
+              <p>My kids loved the rides and all the fun we had in the show. Thanks!<a href="#">Kelley Nebauer</a></p>
+              <a href="http://twitter.com/?q=ormeau+carols#!/OrmeauCarols" target="_blank" class="external-link">Follow us on Twitter</a>
+            </div>
+          </div>
+          <div class="panel">
+            <h1>Sponsorship</h1>
+            <div class="panel-content">
+              <a href="mailto:Carols.sponsor@highway.com.au?subject=I would like to sponsor the Ormeau Carols">
+                <img src="/Content/images/sponsorship.png" alt="sponsorship"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      @RenderBody()
+    </div>
+  </div> <!-- eo #container -->
+
+    <footer>
+
+    </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+  <script>    window.jQuery || document.write("<script src='js/libs/jquery-1.6.2.min.js'>\x3C/script>")</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg");</script>
+  <![endif]-->
+
+
+
+  <script>
+    var _gaq = [["_setAccount", "UA-XXXXX-X"], ["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID 
+    (function (d, t) {
+      var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.async = 1;
+      g.src = ("https:" == location.protocol ? "//ssl" : "//www") + ".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g, s)
+    } (document, "script"));
+  </script>
+
+</body>
+</html>
