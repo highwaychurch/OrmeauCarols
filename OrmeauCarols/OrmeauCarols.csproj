@@ -21,6 +21,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -91,21 +95,14 @@
     <Content Include="Content\images\contentbackground.png" />
     <Content Include="Content\images\email.png" />
     <Content Include="Content\images\facebook.png" />
-    <Content Include="Content\images\feature\Image1.jpg" />
-    <Content Include="Content\images\feature\Image2.jpg" />
-    <Content Include="Content\images\feature\Image3.jpg" />
-    <Content Include="Content\images\feature\Image4.jpg" />
-    <Content Include="Content\images\feature\Image5.jpg" />
-    <Content Include="Content\images\feature\Image6.jpg" />
-    <Content Include="Content\images\feature\Image7.jpg" />
-    <Content Include="Content\images\feature\Image8.jpg" />
-    <Content Include="Content\images\feature\Image9.jpg" />
     <Content Include="Content\images\google.png" />
     <Content Include="Content\images\header.png" />
     <Content Include="Content\images\maindetails.png" />
     <Content Include="Content\images\map.png" />
+    <Content Include="Content\images\rightcolumnbackground.png" />
     <Content Include="Content\images\sponsorship.png" />
     <Content Include="Content\images\twitter.png" />
+    <Content Include="Content\images\videothumbnail.png" />
     <Content Include="Content\images\youtube.png" />
     <Content Include="crossdomain.xml" />
     <Content Include="favicon.ico" />

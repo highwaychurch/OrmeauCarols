@@ -85,9 +85,9 @@ body
 {
     background: url(images/background.jpg) no-repeat top center fixed;
     background-color: black;
-    font-family: 'Cardo', serif;
-    color: white;
-    font-size: 1em;
+    font-family: 'PT Mono', sans-serif;
+    color: #333;
+    font-size: 0.8em;
     text-align: center;
 }
 
@@ -99,53 +99,29 @@ p
 
 h1
 {
-    font-size: 30px;
-    color: rgb(207, 208, 178);
-    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
 }
 
 header
 {
     width: 850px;
-    background: rgba(0,0,0,0.8);
     float: right;
-    box-shadow: 0px 0px 10px black;
-
 }
 
-footer
-{
-    height: 200px;
-    margin-top: 50px;
-    background: rgba(0,0,0,0.9);
-    box-shadow: 0px 0px 10px black;
-
+footer {
 }
-
 div#container
 {
     width: 850px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
 }
 
 div#main
 {
-    margin-left: 25px;
+    margin-left: 40px;
     margin-right: 25px;
     padding-bottom: 25px;
-
-    box-shadow: 0px 0px 10px black;
-    
-    /* http://www.colorzilla.com/gradient-editor/ */
-    background: -moz-linear-gradient(top, rgba(207,208,178,0.6) 0%, rgba(207,208,178,0.63) 29%, rgba(0,0,0,0.7) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(207,208,178,0.6)), color-stop(29%,rgba(207,208,178,0.63)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(207,208,178,0.6) 0%,rgba(207,208,178,0.63) 29%,rgba(0,0,0,0.7) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(207,208,178,0.6) 0%,rgba(207,208,178,0.63) 29%,rgba(0,0,0,0.7) 100%); /* Opera11.10+ */
-    background: -ms-linear-gradient(top, rgba(207,208,178,0.6) 0%,rgba(207,208,178,0.63) 29%,rgba(0,0,0,0.7) 100%); /* IE10+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cfd0b2', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
-    background: linear-gradient(top, rgba(207,208,178,0.6) 0%,rgba(207,208,178,0.63) 29%,rgba(0,0,0,0.7) 100%); /* W3C */
 }
 
 div#content
@@ -174,34 +150,22 @@ div#left-col p
     margin-bottom: 10px;
 }
 
-div#left-col p.byline
-{
-    font-style: italic;
-    color: rgb(207, 208, 178);
-
+div#right-col {
+        background: url(images/rightcolumnbackground.png) no-repeat top center;
 }
-
 div#right-col div.panel
 {
     min-height: 50px;
     margin-bottom: 10px;
-    background: rgba(0, 0, 0, 0.85);
-    box-shadow: 1px 1px 2px black;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 div#right-col div.panel
 {
-    
 }
 
 div#right-col div.panel h1
 {
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     padding-top: 7px;
-    background: rgba(0,0,0,0.5);
     font-size: 27px;
 }
 
