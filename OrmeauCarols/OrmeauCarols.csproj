@@ -85,27 +85,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.html" />
-    <Content Include="apple-touch-icon-114x114-precomposed.png" />
-    <Content Include="apple-touch-icon-57x57-precomposed.png" />
-    <Content Include="apple-touch-icon-72x72-precomposed.png" />
-    <Content Include="apple-touch-icon-precomposed.png" />
-    <Content Include="apple-touch-icon.png" />
     <Content Include="Content\handheld.css" />
-    <Content Include="Content\images\2012 Sponsorship Packages.jpg" />
-    <Content Include="Content\images\2012 Sponsorship Speal.jpg" />
+    <Content Include="Content\images\about.png" />
     <Content Include="Content\images\background.jpg" />
     <Content Include="Content\images\contentbackground.png" />
-    <Content Include="Content\images\email.png" />
-    <Content Include="Content\images\facebook.png" />
-    <Content Include="Content\images\google.png" />
+    <Content Include="Content\images\facebookpanel.jpg" />
     <Content Include="Content\images\header.png" />
     <Content Include="Content\images\maindetails.png" />
-    <Content Include="Content\images\map.png" />
     <Content Include="Content\images\rightcolumnbackground.png" />
-    <Content Include="Content\images\sponsorship.png" />
-    <Content Include="Content\images\twitter.png" />
-    <Content Include="Content\images\videothumbnail.png" />
-    <Content Include="Content\images\youtube.png" />
+    <Content Include="Content\images\socialpanelheader.jpg" />
+    <Content Include="Content\images\sponsorpanel.jpg" />
+    <Content Include="Content\images\twitterpanel.jpg" />
+    <Content Include="Content\images\videothumbnail.jpg" />
     <Content Include="crossdomain.xml" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
