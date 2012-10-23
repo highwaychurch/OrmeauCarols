@@ -161,6 +161,7 @@ div#right-col div.twitter-panel
     background: url(images/twitterpanel.jpg) no-repeat top center;
     width: 253px;
     height: 172px;
+    overflow-y: auto;
 }
 
 div#right-col div.facebook-panel
