@@ -21,7 +21,8 @@ namespace OrmeauCarols.Controllers
                          select new Tweet
                                     {
                                         Message = (string) tweet.Element("text"),
-                                        User = (string) tweet.Element("user").Element("screen_name")
+                                        User = (string) tweet.Element("user").Element("screen_name"),
+                                        LinkUrl = "https://twitter.com/OrmeauCarols/status/" + (string)tweet.Element("id"),
                                     };
             return
                 View(new IndexViewModel
@@ -40,5 +41,6 @@ namespace OrmeauCarols.Controllers
     {
         public string User { get; set; }
         public string Message { get; set; }
+        public string LinkUrl { get; set; }
     }
 }

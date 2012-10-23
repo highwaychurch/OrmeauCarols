@@ -28,7 +28,7 @@
                     <a href="http://twitter.com/?q=ormeau+carols#!/OrmeauCarols" target="_blank" class="external-link">Follow us on Twitter</a>
                     @foreach (var tweet in Model.Tweets)
                     {
-                        <p>@tweet.Message - <a href="#">@tweet.User</a></p>
+                        <p>@tweet.Message - <a href="@tweet.LinkUrl">@tweet.User</a></p>
                     }
                 </div>
             </div>
