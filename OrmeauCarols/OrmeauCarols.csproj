@@ -134,7 +134,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <None Include="Content\images\Ormeau Carols 2012 Sponsorship Information.pdf" />
+    <Content Include="Content\pdf\Ormeau Carols 2012 Sponsorship Information.pdf" />
     <None Include="Properties\PublishProfiles\FTP.pubxml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
@@ -145,7 +145,6 @@
     <None Include="_bin_deployableAssemblies\System.Web.Mvc.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\PDF%27s\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
