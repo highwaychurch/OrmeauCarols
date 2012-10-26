@@ -99,6 +99,7 @@
     <Content Include="Content\images\rightcolumnbackground.png" />
     <Content Include="Content\images\socialpanelheader.jpg" />
     <Content Include="Content\images\Sponsordetails.png" />
+    <Content Include="Content\images\SponsorOpp.png" />
     <Content Include="Content\images\sponsorpanel.jpg" />
     <Content Include="Content\images\twitterpanel.jpg" />
     <Content Include="Content\images\videothumbnail.jpg" />
