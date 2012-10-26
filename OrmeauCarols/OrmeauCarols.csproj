@@ -86,14 +86,19 @@
   <ItemGroup>
     <Content Include="404.html" />
     <Content Include="Content\handheld.css" />
+    <Content Include="Content\images\2012 Sponsorship Info.jpg" />
+    <Content Include="Content\images\2012 Sponsorship Packages.jpg" />
     <Content Include="Content\images\about.png" />
     <Content Include="Content\images\background.jpg" />
     <Content Include="Content\images\contentbackground.png" />
     <Content Include="Content\images\facebookpanel.jpg" />
     <Content Include="Content\images\header.png" />
+    <Content Include="Content\images\Highway Logo small white.jpg" />
     <Content Include="Content\images\maindetails.png" />
+    <Content Include="Content\images\MainDetails2.png" />
     <Content Include="Content\images\rightcolumnbackground.png" />
     <Content Include="Content\images\socialpanelheader.jpg" />
+    <Content Include="Content\images\Sponsordetails.png" />
     <Content Include="Content\images\sponsorpanel.jpg" />
     <Content Include="Content\images\twitterpanel.jpg" />
     <Content Include="Content\images\videothumbnail.jpg" />
@@ -128,6 +133,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Content\images\Ormeau Carols 2012 Sponsorship Information.pdf" />
     <None Include="Properties\PublishProfiles\FTP.pubxml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
@@ -138,6 +144,7 @@
     <None Include="_bin_deployableAssemblies\System.Web.Mvc.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\PDF%27s\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
