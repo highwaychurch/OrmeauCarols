@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
@@ -11,13 +12,26 @@ namespace OrmeauCarols.Controllers
         //
         // GET: /Home/
 
-        //[OutputCache(Duration = 600)]
+        [OutputCache(Duration = 600)]
         public ActionResult Index()
         {
-            var twitterAccess = new WebClient();
-            var xml = twitterAccess.DownloadString(new Uri("http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=ormeaucarols"));
-            var xmlTweets = XElement.Parse(xml);
-            var tweets = from tweet in xmlTweets.Descendants("status")
+
+            var facebookClient = new WebClient();
+            facebookClient.Headers.Add("user-agent", "fiddler"); // To stop Facebook from wrapping the RSS in HTML
+            var facebookXml = facebookClient.DownloadString(new Uri("https://www.facebook.com/feeds/page.php?id=246744065349913&format=rss20"));
+            var xStatuses = XElement.Parse(facebookXml);
+            var statuses = from status in xStatuses.Descendants("item").Take(5)
+                           select new FacebookStatus
+                                      {
+                                          Title = (string) status.Element("title"),
+                                          Author = (string) status.Element("author"),
+                                          LinkUrl = (string) status.Element("link")
+                                      };
+
+            var twitterClient = new WebClient();
+            var twitterXml = twitterClient.DownloadString(new Uri("http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=ormeaucarols"));
+            var xTweets = XElement.Parse(twitterXml);
+            var tweets = from tweet in xTweets.Descendants("status")
                          select new Tweet
                                     {
                                         Message = (string) tweet.Element("text"),
@@ -27,14 +41,23 @@ namespace OrmeauCarols.Controllers
             return
                 View(new IndexViewModel
                          {
-                             Tweets = tweets.ToArray()
+                             Tweets = tweets.ToArray(),
+                             FacebookStatuses = statuses.ToArray()
                          });
         }
+    }
+
+    public class FacebookStatus
+    {
+        public string Title { get; set; }
+        public string LinkUrl { get; set; }
+        public string Author { get; set; }
     }
 
     public class IndexViewModel
     {
         public Tweet[] Tweets { get; set; }
+        public FacebookStatus[] FacebookStatuses { get; set; }
     }
 
     public class Tweet

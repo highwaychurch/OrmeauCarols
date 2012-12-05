@@ -37,8 +37,10 @@
             <div class="panel facebook-panel">
                 <div class="panel-content">
                     <a href="http://www.facebook.com/pages/Ormeau-Carols/246744065349913" target="_blank" class="external-link">Follow us on Facebook</a>
-                    <p>I loved Ormeau Carols 2011 - best ever! Can't wait for this year! <a href="#">Nathan Azzopardi</a></p>
-                    <p>My kids loved the rides and all the fun we had in the show. Thanks!<a href="#">Kelley Nebauer</a></p>
+                    @foreach (var status in Model.FacebookStatuses)
+                    {
+                        <p>@status.Title - <a href="@status.LinkUrl">@status.Author</a></p>
+                    }
                 </div>
             </div>
            
