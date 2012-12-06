@@ -94,6 +94,7 @@
     <Content Include="Content\images\Brien Harris Oval Map.jpg" />
     <Content Include="Content\images\Brien Harris Oval Map.png" />
     <Content Include="Content\images\contentbackground.png" />
+    <Content Include="Content\images\Drake Super IGA.jpg" />
     <Content Include="Content\images\facebookpanel.jpg" />
     <Content Include="Content\images\header.png" />
     <Content Include="Content\images\Highway Logo small white.jpg" />
@@ -104,6 +105,7 @@
     <Content Include="Content\images\Sponsordetails.png" />
     <Content Include="Content\images\SponsorOpp.png" />
     <Content Include="Content\images\sponsorpanel.jpg" />
+    <Content Include="Content\images\Sponsors.jpg" />
     <Content Include="Content\images\twitterpanel.jpg" />
     <Content Include="Content\images\videothumbnail.jpg" />
     <Content Include="crossdomain.xml" />
