@@ -33,7 +33,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 input, select { vertical-align: middle; }
 
-body { font:13px/1.231 sans-serif; *font-size:small; }
+body { font:13px/1.231 Adobe Caslon Pro; *font-size:small; }
 select, input, textarea, button { font:99% sans-serif; }
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
@@ -69,10 +69,10 @@ a:link { -webkit-tap-highlight-color: #FF5E99; }
 button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
-body, select, input, textarea { color: #444; }
+body, select, input, textarea { color: #Fdd4d9; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
+a, a:active, a:visited { color: #f2cf79; }
+a:hover { color: #c89006; }
 
 
 /**
@@ -85,8 +85,8 @@ body
 {
     background: url(images/background.jpg) no-repeat top center fixed;
     background-color: black;
-    font-family: 'PT Mono', sans-serif;
-    color: #333;
+    font-family: 'PT Mono', Adobe Caslon Pro;
+    color: #Fdd4d9;
     font-size: 0.8em;
     text-align: center;
 }
