@@ -28,20 +28,20 @@ namespace OrmeauCarols.Controllers
                                           LinkUrl = (string) status.Element("link")
                                       };
 
-            var twitterClient = new WebClient();
-            var twitterXml = twitterClient.DownloadString(new Uri("http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=ormeaucarols"));
-            var xTweets = XElement.Parse(twitterXml);
-            var tweets = from tweet in xTweets.Descendants("status")
-                         select new Tweet
-                                    {
-                                        Message = (string) tweet.Element("text"),
-                                        User = (string) tweet.Element("user").Element("screen_name"),
-                                        LinkUrl = "https://twitter.com/OrmeauCarols/status/" + (string)tweet.Element("id"),
-                                    };
+            //var twitterClient = new WebClient();
+            //var twitterXml = twitterClient.DownloadString(new Uri("http://api.twitter.com/1/statuses/user_timeline.xml?screen_name=ormeaucarols"));
+            //var xTweets = XElement.Parse(twitterXml);
+            //var tweets = from tweet in xTweets.Descendants("status")
+            //             select new Tweet
+            //                        {
+            //                            Message = (string) tweet.Element("text"),
+            //                            User = (string) tweet.Element("user").Element("screen_name"),
+            //                            LinkUrl = "https://twitter.com/OrmeauCarols/status/" + (string)tweet.Element("id"),
+            //                        };
             return
                 View(new IndexViewModel
                          {
-                             Tweets = tweets.ToArray(),
+                             Tweets = new Tweet[] {},
                              FacebookStatuses = statuses.ToArray()
                          });
         }
