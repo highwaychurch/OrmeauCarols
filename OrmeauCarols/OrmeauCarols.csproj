@@ -97,12 +97,11 @@
     <Content Include="Content\images\Drake Super IGA.jpg" />
     <Content Include="Content\images\facebookpanel.jpg" />
     <Content Include="Content\images\header.jpg" />
-    <Content Include="Content\images\header.png" />
     <Content Include="Content\images\Highway Logo small white.jpg" />
     <Content Include="Content\images\Logo.png" />
-    <Content Include="Content\images\maindetails.jpg" />
     <Content Include="Content\images\maindetails.png" />
     <Content Include="Content\images\MainDetails2.png" />
+    <Content Include="Content\images\maindetails3.png" />
     <Content Include="Content\images\rightcolumnbackground.png" />
     <Content Include="Content\images\socialpanelheader.jpg" />
     <Content Include="Content\images\Sponsordetails.jpg" />
@@ -111,6 +110,7 @@
     <Content Include="Content\images\sponsorpanel.jpg" />
     <Content Include="Content\images\Sponsors.jpg" />
     <Content Include="Content\images\twitterpanel.jpg" />
+    <Content Include="Content\images\TwitterPannel.jpg" />
     <Content Include="Content\images\videothumbnail.jpg" />
     <Content Include="crossdomain.xml" />
     <Content Include="favicon.ico" />

@@ -69,7 +69,7 @@ a:link { -webkit-tap-highlight-color: #FF5E99; }
 button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
-body, select, input, textarea { color: #Fdd4d9; }
+body, select, input, textarea { color: #000000; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 a, a:active, a:visited { color: #f2cf79; }
 a:hover { color: #c89006; }
@@ -86,7 +86,7 @@ body
     background: url(images/background.jpg) no-repeat top center fixed;
     background-color: black;
     font-family: 'PT Mono', Adobe Caslon Pro;
-    color: #Fdd4d9;
+    color: #000000;
     font-size: 0.8em;
     text-align: center;
 }
