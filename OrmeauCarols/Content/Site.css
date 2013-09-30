@@ -161,6 +161,7 @@ div#right-col div.twitter-panel
     background: url(images/TwitterPannel2.jpg) no-repeat top center;
     width: 253px;
     height: 172px;
+    color: #FFFFFF;
     overflow-y: auto;
 }
 
@@ -169,6 +170,7 @@ div#right-col div.facebook-panel
     background: url(images/facebookpanel.jpg) no-repeat top center;
     width: 253px;
     height: 172px;
+    color: #FFFFFF;
     overflow-y: auto;
 }
 
